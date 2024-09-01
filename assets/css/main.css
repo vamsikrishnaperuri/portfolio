@@ -147,7 +147,7 @@ b {
 }
 .card-hover-anim:hover {
     border: 5px solid #19a8c9;
-    background-position: 50% 50%;
+    background-position: 0% 0%;
     color: rgb(187, 182, 182);
 }
 .sec-title {
