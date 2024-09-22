@@ -66,12 +66,27 @@ b {
     
 .landing-page {
     height: 100%;
-    background: rgba(39, 39, 40, 0.905);
+    /* background: rgba(206, 206, 216, 0.905); */
     background: radial-gradient(circle, rgba(0, 0, 0, 0.925) 0%, rgba(0, 0, 0, 0.925) 50%);
+    /* background-image: url('assets\images\psychedelic-paper-shapes-with-copy-space.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
+    position: relative;
+    color: #fff; /* Ensure text is visible */
+    height: 100%;
+    
 }
+
+.hero-video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
 .landing-social-link {
     font-size: 36px;
     transition: .3s;
@@ -98,6 +113,9 @@ b {
         font-size: 50px;
         color: #fff;
     }
+    .hero-video{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 667px) {
@@ -107,6 +125,9 @@ b {
     .home-header {
         font-size: 50px;
         color: #fff;
+    }
+    .landimg{
+        display: none;
     }
 }
 .home-btn {
