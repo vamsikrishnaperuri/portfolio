@@ -88,6 +88,7 @@ b {
 }
 
 .landing-social-link {
+    z-index: 1;
     font-size: 36px;
     transition: .3s;
     color: #fff;
@@ -135,10 +136,12 @@ b {
     color: white;
     text-decoration: none;
     transition: .3s;
+    z-index: 1;
 }
 .home-btn:hover {
     color: black;
     background-color: rgb(255, 255, 255);
+    
 }
 .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
     border: none;
