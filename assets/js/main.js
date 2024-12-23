@@ -51,3 +51,28 @@ $(document).ready(function(){
     });
     
 });
+
+// Open modal with animation
+function openImageModal(src) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+
+    modalImage.src = src;
+    modal.style.display = "flex";
+    modal.classList.remove("fade-out");
+    modal.classList.add("fade-in");
+}
+
+// Close modal with animation
+function closeImageModal() {
+    const modal = document.getElementById("imageModal");
+
+    modal.classList.remove("fade-in");
+    modal.classList.add("fade-out");
+
+    // Wait for animation to finish before hiding the modal
+    setTimeout(() => {
+        modal.style.display = "none";
+    }, 400);
+}
+
