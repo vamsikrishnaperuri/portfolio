@@ -1,6 +1,6 @@
 html,body {
     height: 100%;
-    background-color: #242424;
+    /* background-color: #242424; */
 }
 body {
     font-family: 'Poppins',sans-serif;
@@ -13,9 +13,9 @@ b {
     font-family: 'Poppins',sans-serif;
     font-weight: 600;
 }
-.txtcol{
-    color: #fff;
-}
+/* .txtcol{
+    color:#fda400;
+} */
 .navbar-blur {
     background-color: rgba(125, 95, 50, 0.2);
     backdrop-filter: saturate(180%) blur(20px);
@@ -25,9 +25,19 @@ b {
     border-radius: 50px;
     margin-left: 50px;
     margin-right: 50px;
-
-
 }
+
+@media (max-width: 768px) {
+    .navbar-toggler i {
+        color: #fff !important;
+        font-size: 1.5rem;
+    }
+}
+
+.menu-icon i {
+    color: white !important;
+}
+
 .feedimg{
     position: fixed;
     bottom: 30px;
@@ -148,27 +158,37 @@ b {
     outline: none;
     box-shadow: none;
 }
+/* Default card style (dark theme) */
 .card-hover-anim {
-
     padding: 20px;
-    background: #1f1f1f;
     -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     border-radius: 5px;
-    color: white;
-    padding: 1.75rem;
     transition: 0.4s ease;
     overflow-wrap: break-word !important;
     margin: 1rem;
     margin-bottom: 20px;
     border-radius: 6px;
 }
+
+/* Shadow-Neumorphism style (dark theme) */
 .shadow-neumorphism {
-    background: #1f1f1f; /* Dark background */
     border-radius: 15px;
     box-shadow: 8px 8px 16px #000000, /* Darker shadow */
                 -8px -8px 16px #4d4d4d; /* Lighter shadow */
 }
+
+/* Light theme - softer card shadow */
+body.light-theme .card-hover-anim {
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Light theme - softer neumorphism shadow */
+body.light-theme .shadow-neumorphism {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .card-hover-anim:hover {
     border: 5px solid #19a8c9;
     background-position: 0% 0%;
@@ -179,23 +199,37 @@ b {
     color: white;
     text-align: center;
 }
+/* Default style for "Read more" link */
 .more-link {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fda400; /* Keep the orange color consistent */
     font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
+/* Adjust hover effect for "Read more" link */
 .more-link i {
     position: relative;
     left: 5px;
-    transition: left ease .3s;
+    transition: left ease 0.3s;
 }
+
 .more-link:hover {
-    opacity: 75%;
-    color: #fda400;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Add shadow for hover effect */
 }
+
 .more-link:hover > i {
-    position: relative;
     left: 15px;
+}
+
+/* Light theme - ensure "Read more" is still visible */
+body.light-theme .more-link {
+    color: #fda400; /* Same orange color for light theme */
+}
+
+body.light-theme .more-link:hover {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slightly softer text shadow for light theme */
 }
 .footer-block {
     background-color: rgb(247, 255, 232);
@@ -532,4 +566,199 @@ b {
     to {
         transform: scale(0.8);
     }
+}
+
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Slide-up animation */
+  .slide-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  }
+  
+  .slide-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Button hover animation */
+  .home-btn {
+    background-color: #fda400;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .home-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(253, 164, 0, 0.3);
+  }
+  
+  /* Interactive card hover effect */
+  .card-hover-anim {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-hover-anim:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Navbar active link */
+  .nav-link.active {
+    color: #fda400;
+    font-weight: bold;
+  }
+  
+  /* Parallax scrolling effect */
+  .landing-page {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Enhanced image thumbnail hover */
+  .image-container:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Initial state for fade-left animation */
+.fade-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  /* Initial state for fade-right animation */
+  .fade-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  /* Final state after animation */
+  .fade-left.show, .fade-right.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+/* Default theme variables */
+:root {
+    --background-color: #242424;
+    --text-color: #ffffff;
+    --primary-color: #fda400;
+}
+
+/* Light theme variables */
+body.light-theme {
+    --background-color: #f5f5f5; /* Softer off-white background */
+    --text-color: #000000;
+    --primary-color: #fda400;
+}
+
+/* Apply the variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+/* Theme toggle button styles */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:focus {
+    outline: none;
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+}
+
+
+/* Light Theme (Default) */
+.achievement-card {
+    background: linear-gradient(145deg, #ffffff, #f7f7f7); /* Light gradient background */
+    border: 1px solid #007bff; /* Blue border */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark Theme */
+body.dark-theme .achievement-card {
+    background: #000000; /* Solid black background */
+    border: 1px solid #fda400; /* Orange border for dark theme */
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1); /* Subtle shadow for dark theme */
+    color: #ffffff; /* White text for dark theme */
+}
+
+/* Heading style */
+.achievement-card h4 {
+    font-weight: bold;
+    color: #007bff; /* Blue color for light theme */
+}
+
+/* Adjust heading color for dark theme */
+body.dark-theme .achievement-card h4 {
+    color: #fda400; /* Orange color for dark theme */
+}
+
+/* Paragraph styling */
+.achievement-card p {
+    font-size: 16px;
+    color: #333333; /* Dark gray for light theme */
+    line-height: 1.6;
+}
+
+/* Adjust text color for dark theme */
+body.dark-theme .achievement-card p {
+    color: #ffffff; /* White text for dark theme */
+}
+
+/* Divider styling */
+.achievement-card hr {
+    border-top: 2px solid #007bff; /* Blue divider for light theme */
+}
+
+/* Adjust divider color for dark theme */
+body.dark-theme .achievement-card hr {
+    border-top: 2px solid #fda400; /* Orange divider for dark theme */
+}
+
+/* Hover effect for both themes */
+.achievement-card:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Adjust hover effect for dark theme */
+body.dark-theme .achievement-card:hover {
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.2); /* Subtle glowing shadow for dark theme */
 }

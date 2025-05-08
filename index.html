@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navBar">
         <div class="container">
             <a href="#" class="navbar-brand" style="color: #fda400;">vamsi</a>
-            <button class="navbar-toggler" type="button" data-bs-target="#navContent" data-bs-toggle="collapse" id="navIcon" title="Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+            <button class="navbar-toggler menu-icon" type="button" data-bs-target="#navContent" data-bs-toggle="collapse" id="navIcon" title="Menu"><i class="fa-solid fa-bars-staggered"></i></button>
             <div class="collapse navbar-collapse" id="navContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -27,6 +27,9 @@
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Achievements</a></li>
                 </ul>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i id="theme-icon" class="fa-solid fa-moon"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -51,7 +54,7 @@
               Your browser does not support the video tag.
           </video>
           
-            <div class="row">
+            <div class="row fade-in">
                 <div class="col-md-6 mt-125">
                     <h1 class="home-header">I'm<br><div class="content"><h2>Vamsi Krishna</h2><h2>Vamsi Krishna</h2></div></h1>
                     <p><span class="auto-input"></span></p>
@@ -79,14 +82,14 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5 fade-in">
         <h3 class="sec-title p-3 rounded-pill shadow" id="about">About</h3>
         <div class="row mt-5">
             <div class="col-lg-2"></div>
             <div class="col-lg-9">
                 <div class="p-2 p-lg-9">
                     <hr>
-                    <div style="color: #fff;">
+                    <div>
                     <p>I am a dedicated Computer Science Engineering student passionate about mobile application development, web development, and UI/UX design. My technological journey has been marked by a commitment to mastering diverse skills, from developing sophisticated Android applications using Java and Flutter to designing intuitive user interfaces with Figma and Adobe XD. With a strong foundation in various programming languages, including Python, Kotlin, and Dart, I constantly seek opportunities to expand my knowledge and stay updated with the latest industry trends. My involvement in coding clubs and volunteer work reflects my enthusiasm for technology and my drive to contribute to the tech community. I am committed to leveraging my skills to create innovative solutions and enhance user experiences.</p>
                 </div>
                 </div>
@@ -95,7 +98,7 @@
         </div>
         <div class="mt-5">
             <h4 style="color: #fda400;">Education</h4>
-            <div class="container px-2">
+            <div class="container px-2  fade-left">
                 <div class="row gx-3 gy-3 mt-3 d-flex justify-content-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="shadow-neumorphism rounded-5 p-5 card-hover-anim" style="height: 300px; overflow: hidden;">
@@ -127,7 +130,7 @@
         
         <div class="mt-5">
             <h4 style="color: #fda400;">Experience</h4>
-            <div class="container px-2">
+            <div class="container px-2 fade-right">
                 <div class="row gx-3 gy-3 mt-3 d-flex justify-content-center">
                     <div class="col-lg-3 col-md-6">
                         <div class="shadow-neumorphism rounded-5 p-5 card-hover-anim" style="height: 250px; overflow: hidden;">
@@ -157,74 +160,74 @@
     </div>
     <div class="container mt-5">
         <h3 class="sec-title p-3 rounded-pill shadow" id="skills">Skills</h3>
-        <div class="container px-4 mt-5">
+        <div class="container px-4 mt-5 slide-up">
             <div class="row gx-5 gy-5 d-flex justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <img class="skill-img" src="assets\images\colorful-illustration-programmer-working.png" alt="frontend">
                     <h4 class="mt-3" style="color: #fda400;">Frontend Development</h4>
-                    <p style="color: #fff;">As a frontend developer, I design and build user interfaces using HTML, CSS, and JavaScript. My goal is to create visually appealing and user-friendly interfaces that seamlessly integrate with the backend functionality. With my skills, I can build responsive and interactive websites that deliver a high level of performance and functionality.</p>
+                    <p>As a frontend developer, I design and build user interfaces using HTML, CSS, and JavaScript. My goal is to create visually appealing and user-friendly interfaces that seamlessly integrate with the backend functionality. With my skills, I can build responsive and interactive websites that deliver a high level of performance and functionality.</p>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <img class="skill-img" src="assets\images\App development-bro.png" alt="backend">
                     <h4 class="mt-3" style="color: #fda400;">Mobile Application Development</h4>
-                    <p style="color: #fff;">I specialize in developing robust and user-friendly Android mobile applications using both native Android Studio and Flutter. My experience includes creating apps that deliver seamless performance and intuitive interfaces, catering to a diverse range of user needs. Leveraging the capabilities of Android Studio, I craft native applications optimized for performance, while my expertise in Flutter allows me to build cross-platform apps with a single codebase, ensuring efficiency and consistency across devices</p>
+                    <p>I specialize in developing robust and user-friendly Android mobile applications using both native Android Studio and Flutter. My experience includes creating apps that deliver seamless performance and intuitive interfaces, catering to a diverse range of user needs. Leveraging the capabilities of Android Studio, I craft native applications optimized for performance, while my expertise in Flutter allows me to build cross-platform apps with a single codebase, ensuring efficiency and consistency across devices</p>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <img class="skill-img" src="assets\images\web-design-layout.png" alt="graphicdesign">
                     <h4 class="mt-3" style="color: #fda400;">UI/UX Design</h4>
-                    <p style="color: #fff;">I excel in crafting engaging and intuitive user interfaces using Figma and Adobe XD. My design process focuses on creating seamless user experiences by combining aesthetic appeal with functionality. Through Figma, I design responsive and interactive prototypes. My goal is to deliver designs that not only look great but also enhance usability and user satisfaction.</p>
+                    <p>I excel in crafting engaging and intuitive user interfaces using Figma and Adobe XD. My design process focuses on creating seamless user experiences by combining aesthetic appeal with functionality. Through Figma, I design responsive and interactive prototypes. My goal is to deliver designs that not only look great but also enhance usability and user satisfaction.</p>
                 </div>
             </div>
         </div>
-        <div class="container mt-5 p-4 border rounded-5">
+        <div class="container mt-5 p-4 border rounded-5  slide-up">
             <div class="row gx-5 gy-5 text-center">
                 <div class="col-5 col-md-3 col-lg-2">
                     <i class="fa-brands fa-java langs-known-item"></i>
-                    <p style="color: #fff;">Java</p>
+                    <p>Java</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <img src="assets/images/android.png" alt="">
-                    <p style="color: #fff;">Android App Development</p>
+                    <p>Android App Development</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <i class="fa-brands fa-python langs-known-item"></i>
-                    <p style="color: #fff;">Python</p>
+                    <p>Python</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <i class="fa-brands fa-js langs-known-item"></i>
-                    <p style="color: #fff;">JavaScript</p>
+                    <p>JavaScript</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <img src="assets/images/figma (1).png" alt=""> <br>
-                    <p style="color: #fff;">Figma</p>
+                    <p>Figma</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <i class="fa-solid fa-circle-nodes langs-known-item"></i>
-                    <p style="color: #fff;">RESTful APIs</p>
+                    <p>RESTful APIs</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <i class="fa-solid fa-database langs-known-item"></i>
-                    <p style="color: #fff;">SQL & NoSQL</p>
+                    <p>SQL & NoSQL</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <i class="fa-brands fa-git langs-known-item"></i>
-                    <p style="color: #fff;">Git</p>
+                    <p>Git</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <i class="fa-brands fa-linux langs-known-item"></i>
-                    <p style="color: #fff;">Linux</p>
+                    <p>Linux</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <img src="assets/images/flutter.png" alt="">
-                    <p style="color: #fff;">Flutter</p>
+                    <p>Flutter</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <i class="fa-brands fa-html5 langs-known-item"></i>
-                    <p style="color: #fff;">HTML5</p>
+                    <p>HTML5</p>
                 </div>
                 <div class="col-6 col-md-3 col-lg-2">
                     <i class="fa-brands fa-css3 langs-known-item"></i>
-                    <p style="color: #fff;">CSS3</p>
+                    <p>CSS3</p>
                 </div>
             </div>
             <h4 class="mt-5 text-center" style="color: #fda400;">Technologies known</h4>
@@ -233,16 +236,21 @@
     <div class="container mt-5">
         <h3 class="sec-title p-3 rounded-pill shadow" id="portfolio">Projects</h3>
         <div class="px-lg-4 mt-5">
-            <div class="row gx-3 gy-3">
-                <div class="col-lg-4 col-md-6">
-                    <div class="shadow-neumorphism p-3 p-lg-5 rounded-5" style="height: 410px;">
+            <div class="row gx-5 gy-4">
+                <div class="col-lg-4 col-md-6  fade-left">
+                    <div class="shadow-neumorphism p-3 p-lg-5 rounded-5" style="height: 440px;">
                         <h4 class="text-center mb-3" style="color: #fda400;">Disaster Warning System</h4>
-                        <p class="txtcol">Real-time disaster alerts and safety tracking application.</p>
+                        <p>Real-time disaster alerts and safety tracking application.</p>
                         
-                        <p class="txtcol">This application tracks user location and alerts them to nearby disasters such as cyclones, hurricanes, and
+                        <p>This application tracks user location and alerts them to nearby disasters such as cyclones, hurricanes, and
                             forest fi res. It provides real-time warnings to ensure user safety.</p>
                         <div class="grid d-flex justify-content-center">
-                            <a href="https://github.com/vamsikrishnaperuri/Disaster_Warning_System" target="_blank" rel="noopener" class="btn landing-social-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/vamsikrishnaperuri/Disaster_Warning_System" 
+                            target="_blank" 
+                            rel="noopener" 
+                            class="btn landing-social-link">
+                            <img src="assets\images\github.png" alt="GitHub" style="width: 24px; height: 24px;">
+                            </a>
                         </div>
                         <div class="grid d-flex justify-content-end">
                             <div class="image-container">
@@ -264,13 +272,13 @@
                         
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  fade-left">
                     <div class="shadow-neumorphism p-3 p-lg-5 rounded-5" style="height: 440px;">
                         <h4 class="text-center mb-3" style="color: #fda400;">Voc_synth</h4>
-                        <p class="txtcol">This application leverages voice cloning technology to create a personalized, synthesized voice from a user’s audio sample. By analyzing a sample clip, it enables the application to speak text in the trained voice, offering a seamless and customized auditory experience for various applications.</p>
+                        <p>This application leverages voice cloning technology to create a personalized, synthesized voice from a user’s audio sample. By analyzing a sample clip, it enables the application to speak text in the trained voice, offering a seamless and customized auditory experience for various applications.</p>
                         
                         <div class="grid d-flex justify-content-center">
-                            <a href="https://github.com/vamsikrishnaperuri/Voc_synth" target="_blank" rel="noopener" class="btn landing-social-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/vamsikrishnaperuri/Voc_synth" target="_blank" rel="noopener" class="btn landing-social-link"><img src="assets\images\github.png" alt="GitHub" style="width: 24px; height: 24px;"></a>
                         </div>
                         <div class="grid d-flex justify-content-end">
                             <div class="image-container">
@@ -306,13 +314,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="shadow-neumorphism p-3 p-lg-5 rounded-5" style="height: 410px;">
+                <div class="col-lg-4 col-md-6  fade-left">
+                    <div class="shadow-neumorphism p-3 p-lg-5 rounded-5" style="height: 440px;">
                         <h4 class="text-center mb-3" style="color: #fda400;">The ERA (Emergeny Rescue App)</h4>
-                        <p class="txtcol">This application connects users seamlessly with emergency services, allowing them to send messages, make calls to emergency numbers, and access locations via GPS, all with an intuitive and effective UI/UX.</p>
-                        <hr />
+                        <p>This application connects users seamlessly with emergency services, allowing them to send messages, make calls to emergency numbers, and access locations via GPS, all with an intuitive and effective UI/UX.</p>
+                        
                         <div class="grid d-flex justify-content-center">
-                            <a href="https://github.com/vamsikrishnaperuri/Emergency-Rescue-App-ERA-" target="_blank" rel="noopener" class="btn landing-social-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/vamsikrishnaperuri/Emergency-Rescue-App-ERA-" target="_blank" rel="noopener" class="btn landing-social-link"><img src="assets\images\github.png" alt="GitHub" style="width: 24px; height: 24px;"></a>
                         </div>
                         <div class="grid d-flex justify-content-end">
                             <div class="image-container">
@@ -356,15 +364,15 @@
                         </div>
                     </div>
                 </div>
-                <hr><hr>
-                <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
+                <div class="mt-5"></div> <!-- Adds vertical margin -->
+                <div class="row justify-content-evenly gy-4">
+                <div class="col-lg-4 col-md-6  fade-right">
                     <div class="shadow-neumorphism p-3 p-lg-5 rounded-5" style="height: 400px;">
                         <h4 class="text-center mb-3" style="color: #fda400;">Gemini UI</h4>
-                        <p class="txtcol">This application leverages the Google Gemini API to enable users to prompt questions and receive answers, all within a streamlined and user-friendly interface designed in Flutter.</p>
-                        <hr />
+                        <p>This application leverages the Google Gemini API to enable users to prompt questions and receive answers, all within a streamlined and user-friendly interface designed in Flutter.</p>
+                      
                         <div class="grid d-flex justify-content-center">
-                            <a href="https://github.com/vamsikrishnaperuri/Gemini" target="_blank" rel="noopener" class="btn landing-social-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/vamsikrishnaperuri/Gemini" target="_blank" rel="noopener" class="btn landing-social-link"><img src="assets\images\github.png" alt="GitHub" style="width: 24px; height: 24px;"></a>
                         </div>
                         <div class="grid d-flex justify-content-end">
                             <div class="image-container">
@@ -386,13 +394,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  fade-right">
                     <div class="shadow-neumorphism p-3 p-lg-5 rounded-5" style="height: 400px;">
                         <h4 class="text-center mb-3" style="color: #fda400;">Akasa Air AI</h4>
-                        <p class="txtcol">This is an AI chatbot to enhance the airline experience with features like flight management, personalized recommendations, real-time updates, multi-language support, and seamless integration with airline systems.</p>
+                        <p>This is an AI chatbot to enhance the airline experience with features like flight management, personalized recommendations, real-time updates, multi-language support, and seamless integration with airline systems.</p>
                         
                         <div class="grid d-flex justify-content-center">
-                            <a href="https://github.com/vamsikrishnaperuri/Akasa-air" target="_blank" rel="noopener" class="btn landing-social-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/vamsikrishnaperuri/Akasa-air" target="_blank" rel="noopener" class="btn landing-social-link"><img src="assets\images\github.png" alt="GitHub" style="width: 24px; height: 24px;"></a>
                         </div>
                         <div class="grid d-flex justify-content-end">
                             <div class="image-container">
@@ -431,7 +439,7 @@
         <h3 class="sec-title p-3 rounded-pill shadow" id="contact">Achievements</h3>
         <div class="px-lg-4 mt-5">
             <div class="row gx-3 gy-3">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 fade-left">
                     <div class="shadow-neumorphism card-container p-3 p-lg-5 rounded-circle d-flex align-items-center justify-content-center" style="height: 300px; width: 300px; border: 5px solid #fda400; background-color: #ffffffcc;">
                         <div class="grid d-flex justify-content-center">
                             <img src="assets/images/India-Skills-LOGO.webp" alt="" style="max-width: 100%; max-height: 100%;">
@@ -442,17 +450,91 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-8 col-md-6">
-                    <div class="p-3 p-lg-9 rounded-5 d-flex align-items-center justify-content-center" style="height: 300px;width:auto;">
-                        <div class="grid d-flex justify-content-center">
-                            <p  style="color: #fff;">I represented Andhra Pradesh in Mobile Application Development at IndiaSkills (Olympics for Skills,
-                                India), held in Delhi from 15th may 2024 to 19th may 2024, and won Medallion of Excellence.</p>
+                <div class="col-lg-8 col-md-6 fade-right">
+                    <div class="card achievement-card shadow-lg rounded-5">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="text-center text-warning mb-3">
+                                🏅 Medallion of Excellence – Mobile Application Development (India Skills 2024)
+                            </h4>
+                            <p class="text-center text-muted mb-2">
+                                Issued by <strong>National Skill Development Corporation (NSDC), Govt. of India</strong> · May 2024
+                            </p>
+                            <hr class="w-50">
+                            <p class="text-justify px-4">
+                                Awarded the prestigious <strong>Medallion of Excellence</strong> in the <strong>Mobile Application Development</strong> category at 
+                                <strong>India Skills 2024</strong> — India's biggest skill competition, often called the <i>"Olympics for Skills."</i> 
+                                The national-level event took place from <strong>May 15–19, 2024</strong>, at <strong>Yashobhoomi (IIIC), Dwarka, New Delhi.</strong> 
+                                This recognition reflects my dedication, growth, and commitment to excellence in mobile app development while representing 
+                                <strong>Andhra Pradesh</strong> at the national stage.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <hr>
-                <div class="col-lg-4 col-md-6">
-                    <div class="shadow-neumorphism card-container p-3 p-lg-5 rounded-circle d-flex align-items-center justify-content-center" style="height: 300px; width: 300px; border: 5px solid #fda400;">
+                <div class="col-lg-4 col-md-6 fade-left">
+                    <div class="shadow-neumorphism card-container p-3 p-lg-5 rounded-circle d-flex align-items-center justify-content-center" style="height: 300px; width: 300px; border: 5px solid #fda400;background-color: #ffffffcc;">
+                        <div class="grid d-flex justify-content-center">
+                            <img src="assets\images\apskills-removebg-preview.png" alt="" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                        <div class="overlay">
+                            
+                            <a href="https://drive.google.com/drive/folders/168FLSAUomHpEsu7sm1DooDuVKXiJLsgu?usp=sharing" target="_blank"><img src="assets\images\sharingan.png" alt="eye icon" class="eye-icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 fade-right">
+                    <div class="card achievement-card shadow-lg rounded-5">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="text-center text-warning mb-3">
+                                🥇Gold Medal - Mobile Application Development (Andhra Pradesh Skills 2024)
+                            </h4>
+                            <p class="text-center text-muted mb-2">
+                                Issued by <strong>Andhra Pradesh State Skill Development Corporation (APSSDC)</strong> · May 2024
+                            </p>
+                            <hr class="w-50">
+                            <p class="text-justify px-4">
+                                I was awarded the <strong>Gold Medal</strong> in the Mobile Application Development Trade at the <strong>Andhra Pradesh State Skill Competition 2024</strong>, organized by APSSDC on 7th and 8th May at KHIT Institute of Technology. Competing against the best talent from across the state, this recognition affirmed my technical expertise and innovation in mobile app development.
+<br><br>
+This achievement gave me the honor of representing <strong>Andhra Pradesh</strong> at the prestigious <strong>India Skills 2024</strong> national competition — a major milestone in my journey as a developer and a proud validation of my dedication to the craft.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-lg-4 col-md-6 fade-left">
+                    <div class="shadow-neumorphism card-container p-3 p-lg-5 rounded-circle d-flex align-items-center justify-content-center" style="height: 300px; width: 300px; border: 5px solid #fda400;background-color: #ffffffcc;">
+                        <div class="grid d-flex justify-content-center">
+                            <img src="assets\images\bits_hyd-removebg-preview.png" alt="" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                        <div class="overlay">
+                            
+                            <a href="https://drive.google.com/drive/folders/168FLSAUomHpEsu7sm1DooDuVKXiJLsgu?usp=sharing" target="_blank"><img src="assets\images\sharingan.png" alt="eye icon" class="eye-icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 fade-right">
+                    <div class="card achievement-card shadow-lg rounded-5">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="text-center text-warning mb-3">
+                                🥇 1st Place - Mobile Application Development Hackathon (TechXcelerate 2025)
+                            </h4>
+                            <p class="text-center text-muted mb-2">
+                                Issued by <strong>BITS Pilani Hyderabad Campus – LaunchPad, E-Cell, Bharatversity, CodeBeat & CodeMania</strong> · Mar 2025
+                            </p>
+                            <hr class="w-50">
+                            <p class="text-justify px-4">\
+                                Our team <strong>Garuda79</strong> secured <strong>1st place</strong> in the Mobile Application Development track at <strong>TechXcelerate 2025</strong>, a premier tech fest hosted by BITS Pilani Hyderabad on March 22–23. Over a 20-hour overnight hackathon, we built a powerful solution addressing the theme <strong>“Community Disaster Management”</strong>, progressing through multiple rigorous evaluation rounds.
+<br><br>
+Beyond the competition, I also participated in an intensive <strong>DevOps workshop</strong>, gaining hands-on experience with industry-grade tools such as <strong>Jenkins</strong>, <strong>Maven</strong>, <strong>Kubernetes</strong>, <strong>Terraform</strong>, <strong>Ansible</strong>, <strong>Grafana</strong>, and <strong>Blockchain</strong> technologies.
+<br><br>
+This experience was a powerful mix of <strong>collaborative innovation</strong> and <strong>technical growth</strong>, further fueling my passion for building scalable, real-world solutions.
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-lg-4 col-md-6 fade-left">
+                    <div class="shadow-neumorphism card-container p-3 p-lg-5 rounded-circle d-flex align-items-center justify-content-center" style="height: 300px; width: 300px; border: 5px solid #fda400;background-color: #ffffffcc;">
                         <div class="grid d-flex justify-content-center">
                             <img src="assets\images\logo-big-color.png" alt="" style="max-width: 100%; max-height: 100%;">
                         </div>
@@ -462,15 +544,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-6">
-                    <div class="p-3 p-lg-8 rounded-5 d-flex align-items-center justify-content-center" style="height: 300px;width:auto;">
-                        <div class="grid d-flex justify-content-center">
-                            <p  style="color: #fff;">Our team competed in a 10-hour hackathon, "Hack For Humanity," at GMRIT College of Engineering alongside
-                                many other colleges and secured Gold medal for developing the Disaster Management System.</p>
+                <div class="col-lg-8 col-md-6 fade-right">
+                    <div class="card achievement-card shadow-lg rounded-5">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <h4 class="text-center text-warning mb-3">
+                                🏆Winner - Hack For Humanity Hackathon 2024
+                            </h4>
+                            <p class="text-center text-muted mb-2">
+                                Issued by <strong>GMR Institute of Technology</strong> · Feb 2024
+                            </p>
+                            <hr class="w-50">
+                            <p class="text-justify px-4">
+                                Our team emerged as the winner of the 10-hour inter-college hackathon <strong>Hack For Humanity</strong>, competing against talented teams from various colleges. We developed an innovative <strong>Disaster Warning System</strong> — a real-time application designed to aggregate and analyze disaster-related data, helping authorities and citizens stay informed and respond quickly. 
+                                <br><br>
+                                This achievement highlighted our <strong>teamwork</strong>, <strong>problem-solving skills</strong>, and commitment to using technology for social good.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <hr>
             </div>
         </div>
     </div>
